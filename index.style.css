@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #141e4c;
+}
+
+
+.welcome {
+    height: 65vh;
+    background-color: #141e4c;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    padding: var(--spacing-medium);
+
+}
+
+.welcome .container1 {
+    margin-left: 30px;
+    margin-top: 260px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.welcome h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+h1 {
+
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px){
+    .welcome h1 {
+        font-size: 2.5rem;
+    }
+}
+
+p {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    color: white;
+}
+
+.paragraf {
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    color: white;
+}
+
+.imaginea1 {
+    width: 105px;
+}
+
+.imaginea2 {
+    width: 70px;
+}
+
+.imaginea3 {
+    width: 30px;
+}
+
+.imaginea4 {
+    width: 110px;
+}
+@media (max-width: 768px){
+.welcome img {
+    display: block;
+    margin-top: var(--spacing-medium);
+    margin-left: var(--spacing-small);
+}
+}
+img {
+    margin-left: 16px;
+}
+
+span {
+    color: #fbb44c;
+}
+
+.welcome a {
+    color: white;
+    background-color: #2bb686;
+    text-align: center;
+    padding: 16px;
+    border: 2px solid #2bb686;
+    border-radius: 5px;
+    width: 260px;
+
+}
+
+.button-a:hover {
+    background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome .container1 {
+        margin-top: 110px;
+    }
+
+    .container1>h1 {
+        font-size: 40px;
+
+    }
+
+    .paragraf {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imaginea1,
+    .imaginea2,
+    .imaginea3,
+    .imaginea4 {
+        padding-bottom: 10px;
+    }
+
+    .imaginea1 {
+        padding-top: 15px;
+    }
+
+    .button-a {
+        display: none;
+    }
+
+}
+
+
+.calendar-cursuri {
+    background-color: white;
+    margin-left: 0px;
+    width: 100%;
+    padding-bottom: 50px;
+
+}
+
+h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 27px;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.coloana {
+    flex-direction: row;
+    background-color: white;
+    padding: var(--spacing-medium);
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.card-pyth,
+.card-dev,
+.card-IT,
+.card-graph,
+.card-java,
+.card-c {
+
+    flex-direction: column;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(190, 190, 190);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.bar-c {
+    border-radius: 5px;
+    padding-top: 2px;
+    background-color: #2bb686;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    width: 100%;
+    margin-right: 350px;
+}
+
+.stats-o {
+    color: black;
+    font-size: 15px;
+}
+
+.stats {
+    color: black;
+    background-color: #fbb44c;
+}
+
+.stats-s {
+    color: black;
+    margin-right: 8px;
+}
+
+.bi {
+    margin-left: 12px;
+}
+
+.space {
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome {
+        padding-left: 15px;
+    }
+
+    .container1>h1 {
+        font-size: 40px;
+    }
+
+    .paragraf {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imaginea1,
+    .imaginea2,
+    .imaginea3,
+    .imaginea4 {
+        padding-bottom: 10px;
+    }
+
+    .imaginea1 {
+        padding-top: 15px;
+    }
+
+    .button-a {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+    .coloana {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+
+    }
+
+    .foto {
+        width: 200%;
+
+    }
+
+
+
+
+    .card-IT,
+    .card-dev,
+    .card-pyth,
+    .card-graph,
+    .card-java,
+    .card-c {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .coloana {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+.ce-este {
+    width: 100%;
+    background-color: #dfedf5;
+    margin-top: none;
+    padding-bottom: 50px;
+
+
+}
+
+.text {
+    color: black;
+    font-size: 14px;
+    text-align:center;
+
+}
+
+.card-background {
+    background-color: #dfedf5;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-us {
+    background-color: #dfedf5;
+    display: flex;
+
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 17px;
+    position: relative;
+    background-color: #dfedf5;
+
+}
+
+
+.foto {
+    margin-bottom: 20px;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-itschool {
+    margin-bottom: 30px;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    padding: var(--spacing-medium);
+}
+
+.section3 {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-parteneri {
+    max-width: 900px;
+    min-width: 320px;
+    margin: auto;
+    padding: var(--spacing-medium);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: calc (20% - 20px);
+    margin: 40px;
+    gap: 40px;
+}
+
+.imagine-parteneri,
+.logo,
+.logo2,
+.logo3,
+.logo4,
+.logo5,
+.logo6,
+.logo7,
+.logo8,
+.logo9,
+.logo10 {
+    margin-right: 0px 42px;
+    filter: grayscale(100%);
+    width: 110px;
+}
+
+.logo-parteneri:hover {
+    filter: grayscale(0);
+}
+
+.background-titlu-parteneri {
+    background-color: white;
+    
+}
+
+@media screen and (min-width: 993px) {
+    .foto {
+        width: 350px;
+    }
+}
+
+.h2-parteneri {
+    padding-top: 40px;
+    padding-bottom: 0;
+}

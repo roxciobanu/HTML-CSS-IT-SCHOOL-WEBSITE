@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #141e4c;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #141e4c, transparent);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+section img {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+section img#moon {
+  mix-blend-mode: screen;
+}
+section img#mountains_front {
+  z-index: 10;
+}
+
+#text_section {
+  position: absolute;
+  right: -400px;
+  color: #fff;
+  white-space: nowrap; 
+  font-size: 7.5vw;
+  z-index: 9;
+  
+  }
+
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #141e4c;
+}
+
+.main {
+  height: 100vh;
+  background: #141e4c url('../Images/stars.png') repeat top center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.main-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.main-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #99ab99;
+  margin-bottom: 2rem;
+}
+
+.main-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+.btn-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-box a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background 0.5s, color 0.5s;
+}
+
+.btn-box a:hover {
+  background: #081b29;
+  color: #00abf0;
+}
+
+.social-media-section {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media-section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.5s, color 0.5s;
+}
+
+.social-media-section a:hover {
+  background: #081b29;
+  color: #00abf0;
+}
